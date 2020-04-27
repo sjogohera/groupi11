@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>about Project i-11</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="shortcut icon" href="favicon.ico" >
+  <!-- PROJECT GROUP i-11 by Sjogohera -->
+</head>
+<body>
+	<!-- MENU NAVIGASI ATAS -->
+	<div id="navbar">
+		<img class="logo"><img src="img/logo.png" style="width:90px; margin-left:-90px;background-color: #7CC188"">
+			<div id="navbar-right">
+				<a class="active" href="home.html">BERANDA</a>
+				<a href="about.html">TEAM i-11</a>
+				<a href="#messages">LAYANAN</a>
+				</div>
+	</div>
+	<!-- PROFIL -->
+	<div class="hero-image">
+		<div class="hero-text">
+		<h1 style="font-size:50px">Samuel Jogo Hera</h1>
+		<p>Guru Yang Senang Belajar Coding</p>
+		<p>No. Registrasi: 0447677191-8</p>
+		</div>
+	</div>
+	<h1 class="center">SEKILAS PERJALANAN MENGENAL DUNIA KODING</h1>
+	<!-- PROFIL -->
+	<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Mulai mengenal dunia website dengan meluncurkan sebuah blog Ilmu Ekonomi yakni Jogohera Blogspot</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Terlibat dalam pelaksanaan Ujian Berbasis Komputer dengan memanfaatkan Aplikasi Open Source.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Ditugaskan sebagai Proktor Ujian Nasional Berbasis Komputer, dan mulai belajar tentang HTML dan CSS</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2019</h2>
+      <p>Mencoba membangun website E-learning dengan memanfaatkan script gratis</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2020</h2>
+      <p>Mengikuti Online Traning oleh Kominfo tentang HTML, CSS dan Java Script.</p>
+    </div>
+  </div>
+</div>
+	<!-- FOOTER -->
+    <footer>
+	<div class="message-wrapper">
+      <div class="containerbw">
+        <div class="headingbw">
+          <h3>Anda Punya Rencana Membangun Website atau Punya Masalah Dengan Website Anda?</h3>
+          <h2>Datanglah, Kami Memberikan Solusi</h2>
+        </div>
+      </div>
+    </div>
+      <div class="containerbw">
+        <img src="img/logo.png">
+      </div>
+	</footer>
+<!-- SCRIPT SLIDE SHOW -->
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) {slideIndex = 1}    
+	for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " active";
+	setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+</script>
+<!-- SCRIPT NAVBAR -->
+</body>
+</html>
